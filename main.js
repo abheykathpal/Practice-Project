@@ -7,10 +7,12 @@ let eyeicon = document.querySelector('#eyeicon')
           password.setAttribute('type', 'text');
           eyeicon.classList.remove('fa-eye');
           eyeicon.classList.add('fa-eye-slash');
+          button.innerHTML = "Hide password";
         } else {
           password.setAttribute('type', 'password');
           eyeicon.classList.remove('fa-eye-slash');
           eyeicon.classList.add('fa-eye');
+          button.innerHTML = "Show password";
         }
       });
     
